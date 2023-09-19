@@ -50,7 +50,7 @@
 
 2) Схема сети CLOS
 
-Otus.ru/Lab_01/Network_Topology.png
+F:\GIT\COD\Otus.ru\Lab_01\Network_Topology.png
 
 3) Конфигурация интерфейсов
 
