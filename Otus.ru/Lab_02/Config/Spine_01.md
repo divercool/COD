@@ -32,6 +32,6 @@ interface Ethernet1/5
   ip router ospf 1 area 0.0.0.3
   no shutdown
   
-  router ospf 1
+router ospf 1
   router-id 1.1.1.1
   default-information originate
