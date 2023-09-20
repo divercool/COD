@@ -1,7 +1,8 @@
 # Настройка протокола OSPF IPv4 для сети Underlay
 
 Схема сети OSPF
-![Alt text](image.png)
+![image](https://github.com/divercool/COD/assets/39337787/8b962df2-cf2f-468b-947e-e916ab9913a6)
+
 # Конфигурация интерфейсов Leaf_01
 
 ```console
