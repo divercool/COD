@@ -1,4 +1,4 @@
-```console
+```python
 interface Ethernet0/0
  no switchport
  ip address 10.100.254.6 255.255.255.252
@@ -26,4 +26,3 @@ router ospf 1
  router-id 4.4.4.4
  network 10.100.2.0 0.0.0.255 area 2
 ```
-!
