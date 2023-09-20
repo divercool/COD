@@ -6,7 +6,7 @@
 # Конфигурация интерфейсов Leaf_01
 
 ```console
-**interface Ethernet0/0
+interface Ethernet0/0
  no switchport
  ip address 10.100.254.2 255.255.255.252
  ip ospf 1 area 1
@@ -29,7 +29,7 @@ interface Vlan10
 !
 router ospf 1
  router-id 3.3.3.3
- network 10.100.1.0 0.0.0.255 area 1**
+ network 10.100.1.0 0.0.0.255 area 1
 ```
 # Конфигурация интерфейсов Leaf_02
 
