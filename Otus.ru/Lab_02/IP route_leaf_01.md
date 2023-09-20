@@ -1,3 +1,4 @@
+```python
 10.0.0.0/8 is variably subnetted, 13 subnets, 3 masks
 O IA     10.100.0.0/30 [110/30] via 10.100.254.13, 03:49:35, Ethernet0/1
                        [110/30] via 10.100.254.1, 03:58:41, Ethernet0/0
@@ -15,3 +16,4 @@ C        10.100.254.12/30 is directly connected, Ethernet0/1
 L        10.100.254.14/32 is directly connected, Ethernet0/1
 O IA     10.100.254.16/30 [110/50] via 10.100.254.13, 03:49:35, Ethernet0/1
 O IA     10.100.254.20/30 [110/50] via 10.100.254.13, 03:49:35, Ethernet0/1
+```

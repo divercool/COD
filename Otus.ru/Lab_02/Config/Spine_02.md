@@ -1,3 +1,4 @@
+```console
 interface port-channel1
   description to Spine_01
   no switchport
@@ -34,3 +35,5 @@ interface Ethernet1/5
   
   router ospf 1
   router-id 2.2.2.2
+
+```

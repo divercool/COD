@@ -1,3 +1,5 @@
+```python
+
 10.100.0.0/30, ubest/mbest: 1/0, attached
     *via 10.100.0.2, Po1, [0/0], 04:34:03, direct
 10.100.0.2/32, ubest/mbest: 1/0, attached
@@ -26,3 +28,4 @@
     *via 10.100.254.21, Eth1/5, [0/0], 04:35:30, direct
 10.100.254.21/32, ubest/mbest: 1/0, attached
     *via 10.100.254.21, Eth1/5, [0/0], 04:35:30, local
+```

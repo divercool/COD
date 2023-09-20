@@ -1,3 +1,4 @@
+```python
 interface Ethernet0/0
  no switchport
  ip address 10.100.254.10 255.255.255.252
@@ -26,4 +27,4 @@ interface Vlan30
 router ospf 1
  router-id 5.5.5.5
  network 10.100.3.0 0.0.0.255 area 3
-!
+```

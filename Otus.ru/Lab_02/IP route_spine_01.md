@@ -1,3 +1,4 @@
+```python
 10.100.0.0/30, ubest/mbest: 1/0, attached
     *via 10.100.0.1, Po1, [0/0], 04:32:39, direct
 10.100.0.1/32, ubest/mbest: 1/0, attached
@@ -26,3 +27,4 @@
     *via 10.100.254.6, Eth1/4, [110/50], 03:29:25, ospf-1, intra
 10.100.254.20/30, ubest/mbest: 1/0
     *via 10.100.254.10, Eth1/5, [110/50], 03:49:23, ospf-1, intra
+```
