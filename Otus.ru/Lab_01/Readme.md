@@ -50,7 +50,8 @@
 
 2) Схема сети CLOS
 
-F:\GIT\COD\Otus.ru\Lab_01\Network_Topology.png
+![image](https://github.com/divercool/COD/assets/39337787/8efca99e-beff-41dd-a4dd-92827892b1cb)
+
 
 3) Конфигурация интерфейсов
 
