@@ -1,3 +1,4 @@
+```python
 Current configuration : 1338 bytes
 !
 ! Last configuration change at 17:08:17 EET Fri Oct 6 2023
@@ -102,3 +103,4 @@ line vty 0 4
 !
 !
 end
+```

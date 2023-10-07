@@ -1,3 +1,5 @@
+```python
+
 !Running configuration last done at: Sat Oct  7 13:51:56 2023
 !Time: Sat Oct  7 14:45:41 2023
 
@@ -78,3 +80,4 @@ router isis 1
     default-information originate
 
 no logging console
+```

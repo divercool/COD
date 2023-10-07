@@ -1,3 +1,5 @@
+```python
+
 !Running configuration last done at: Fri Oct  6 13:51:45 2023
 !Time: Sat Oct  7 14:42:13 2023
 
@@ -76,3 +78,6 @@ line console
 line vty
 router isis 1
   net 49.0001.2222.2222.2222.00
+
+  ```
+  

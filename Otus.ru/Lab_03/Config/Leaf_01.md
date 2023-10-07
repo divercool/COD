@@ -1,3 +1,4 @@
+```python
 
 Current configuration : 1368 bytes
 !
@@ -106,3 +107,4 @@ line vty 0 4
 !
 !
 end
+```
