@@ -5,7 +5,7 @@
 ![!\[Alt text\](image.png)](Network_Topology.png)
 # Конфигурация интерфейсов Leaf_01
 
-```console
+```python
 interface Ethernet0/0
  no switchport
  ip address 10.100.1.2 255.255.255.252
@@ -37,7 +37,7 @@ ip route 0.0.0.0 0.0.0.0 10.100.1.1
 ```
 # Конфигурация интерфейсов Leaf_02
 
-```console
+```python
 interface Ethernet0/0
  no switchport
  ip address 10.100.1.6 255.255.255.252
@@ -78,7 +78,7 @@ ip route 0.0.0.0 0.0.0.0 10.100.1.5
 
 # Конфигурация интерфейсов Leaf_03
 
-```console
+```python
 interface Ethernet0/0
  no switchport
  ip address 10.100.1.10 255.255.255.252
@@ -117,7 +117,7 @@ ip route 0.0.0.0 0.0.0.0 10.100.1.9
 # Конфигурация интерфейсов Spine_01
 
 
-```console
+```python
 interface port-channel1
   no switchport
   ip address 10.100.0.1/30
@@ -171,7 +171,7 @@ router isis 1
 
  # Конфигурация интерфейсов Spine_02
 
-```console
+```python
 interface port-channel1
   no switchport
   ip address 10.100.0.2/30
