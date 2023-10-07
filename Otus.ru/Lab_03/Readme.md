@@ -1,7 +1,11 @@
 # Настройка протокола IS-IS для сети Underlay
 
 Схема сети IS-IS
+<<<<<<< HEAD
 https://github.com/divercool/COD/blob/main/Otus.ru/Lab_03/Network_Topology.png?raw=true
+=======
+[F:\GIT\COD\Otus.ru\Lab_03\Network_Topology.png](https://github.com/divercool/COD/blob/main/Otus.ru/Lab_03/Network_Topology.png?raw=true)
+>>>>>>> 11a787ebff3c9704d178c141ea398d864716100b
 
 # Конфигурация интерфейсов Leaf_01
 
