@@ -114,6 +114,35 @@ no ip http secure-server
 ip route 0.0.0.0 0.0.0.0 10.100.1.9
 ```
 
+# Конфигурация интерфейсов Leaf_04
+```python
+interface Ethernet0/0
+ no switchport
+ ip address 10.200.1.2 255.255.255.252
+ ip router isis 1
+ duplex auto
+ isis network point-to-point 
+!
+interface Ethernet0/1
+!
+interface Ethernet0/2
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 10
+ switchport mode trunk
+!
+interface Ethernet0/3
+!
+interface Vlan10
+ ip address 172.30.0.1 255.255.254.0
+ ip router isis 1
+ isis network point-to-point 
+!         
+router isis 1
+ net 49.0002.1235.1235.1235.00
+ is-type level-1
+
+```
+
 # Конфигурация интерфейсов Spine_01
 
 
