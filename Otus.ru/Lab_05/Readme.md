@@ -110,9 +110,10 @@ router bgp 65001
 
 Так как используется eBGP для связности с Leaf коммутаторами не забываем команды :
 1) rewrite-evpn-rt-asn (в конфиге bgp router)
-2) Создаем route-map NH_UNCHANGED
+2) retain route-target all (в конфиге bgp router)
+3) Создаем route-map NH_UNCHANGED
   set ip next-hop unchanged
-3) указываем route-map (в конфиге bgp router)
+4) указываем route-map (в конфиге bgp router)
 
 
 # Связность evpn L2 Spine_01 с Leaf коммутаторами
