@@ -784,3 +784,64 @@ Route Distinguisher: 4.4.4.4:32797
 09 i
 
 ```
+
+# Таблица мак адресов 
+Leaf_01
+```python
+  VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+*   10     aabb.cc00.6000   dynamic  0         F      F    Eth1/3
+C   10     aabb.cc00.9000   dynamic  0         F      F    nve1(100.100.100.2)
+G   10     5004.0000.1b08   static   -         F      F    sup-eth1(R)
+
+   VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+C   20     aabb.cc00.a000   dynamic  0         F      F    nve1(100.100.100.3)
+G   20     5004.0000.1b08   static   -         F      F    sup-eth1(R)
+
+   VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+*   30     aabb.cc00.7000   dynamic  0         F      F    Eth1/4
+G   30     5004.0000.1b08   static   -         F      F    sup-eth1(R)
+
+```
+Leaf_02
+```python
+VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+C   10     aabb.cc00.6000   dynamic  0         F      F    nve1(100.100.100.1)
+*   10     aabb.cc00.9000   dynamic  0         F      F    Eth1/3
+G   10     500c.0000.1b08   static   -         F      F    sup-eth1(R)
+
+ VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+C   20     aabb.cc00.a000   dynamic  0         F      F    nve1(100.100.100.3)
+G   20     500c.0000.1b08   static   -         F      F    sup-eth1(R)
+Leaf_02# sh mac ad vl 30
+
+ VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+C   30     aabb.cc00.7000   dynamic  0         F      F    nve1(100.100.100.1)
+G   30     500c.0000.1b08   static   -         F      F    sup-eth1(R)
+```
+
+
+Leaf_03
+```python
+  VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+C   10     aabb.cc00.6000   dynamic  0         F      F    nve1(100.100.100.1)
+C   10     aabb.cc00.9000   dynamic  0         F      F    nve1(100.100.100.2)
+G   10     5005.0000.1b08   static   -         F      F    sup-eth1(R)
+
+ VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+*   20     aabb.cc00.a000   dynamic  0         F      F    Eth1/3
+G   20     5005.0000.1b08   static   -         F      F    sup-eth1(R)
+
+ VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+C   30     aabb.cc00.7000   dynamic  0         F      F    nve1(100.100.100.1)
+G   30     5005.0000.1b08   static   -         F      F    sup-eth1(R)
+
+```
