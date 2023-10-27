@@ -2,6 +2,9 @@
 
 ![Alt text](image.png)
 
+# Работа маршрутизации L2 evpn
+![Alt text](image-1.png)
+![Alt text](image-2.png)
 
 полные файлы конфигураций в каталоге Config
 
@@ -845,6 +848,3 @@ C   30     aabb.cc00.7000   dynamic  0         F      F    nve1(100.100.100.1)
 G   30     5005.0000.1b08   static   -         F      F    sup-eth1(R)
 
 ```
-# Работа маршрутизации L2 evpn
-![Alt text](image-1.png)
-![Alt text](image-2.png)
