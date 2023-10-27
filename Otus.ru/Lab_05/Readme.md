@@ -847,3 +847,4 @@ G   30     5005.0000.1b08   static   -         F      F    sup-eth1(R)
 ```
 # Работа маршрутизации L2 evpn
 ![Alt text](image-1.png)
+![Alt text](image-2.png)
