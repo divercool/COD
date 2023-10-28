@@ -46,16 +46,13 @@ vlan 20
 vlan 30
   name VLAN_30
   vn-segment 10030
-vlan 222
-  vn-segment 100222
+
 
 route-map Leaf_peer permit 10
   match interface loopback0 
 vrf context CCCP
-  vni 10222
   rd auto
-  address-family ipv4 unicast
-    route-target both auto
+  route-target both auto
 vrf context management
 
 
@@ -76,10 +73,7 @@ interface Vlan30
   vrf member CCCP
   ip address 30.30.30.30/24
 
-interface Vlan222
-  no shutdown
-  vrf member CCCP
-  ip forward
+
 
 interface nve1
   no shutdown
@@ -91,8 +85,7 @@ interface nve1
     ingress-replication protocol bgp
   member vni 10030
     ingress-replication protocol bgp
-  member vni 100222 associate-vrf
-
+  
 interface Ethernet1/1
   no switchport
   bfd interval 100 min_rx 100 multiplier 2

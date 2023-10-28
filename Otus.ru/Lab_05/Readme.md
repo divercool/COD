@@ -247,13 +247,9 @@ vlan 20
 vlan 30
   name VLAN_30
   vn-segment 10030
-vlan 222
-  vn-segment 100222
 
 vrf context CCCP
-  vni 10222
-  rd auto
-  address-family ipv4 unicast
+    rd auto
     route-target both auto
 
 interface Vlan10
@@ -271,11 +267,6 @@ interface Vlan30
   vrf member CCCP
   ip address 30.30.30.30/24
 
-interface Vlan222
-  no shutdown
-  vrf member CCCP
-  ip forward
-
 interface nve1
   no shutdown
   host-reachability protocol bgp
@@ -285,8 +276,7 @@ interface nve1
   member vni 10020
     ingress-replication protocol bgp
   member vni 10030
-    ingress-replication protocol bgp
-  member vni 100222 associate-vrf      
+    
 
 interface loopback100
   ip address 100.100.100.1/32
@@ -351,14 +341,10 @@ vlan 20
 vlan 30
   name VLAN_30
   vn-segment 10030
-vlan 222
-  vn-segment 100222
 
 vrf context CCCP
-  vni 10222
   rd auto
-  address-family ipv4 unicast
-    route-target both auto
+  route-target both auto
 
 interface Vlan10
   no shutdown
@@ -375,11 +361,6 @@ interface Vlan30
   vrf member CCCP
   ip address 30.30.30.30/24
 
-interface Vlan222
-  no shutdown
-  vrf member CCCP
-  ip forward
-
 interface nve1
   no shutdown
   host-reachability protocol bgp
@@ -390,7 +371,7 @@ interface nve1
     ingress-replication protocol bgp
   member vni 10030
     ingress-replication protocol bgp
-  member vni 100222 associate-vrf
+  
 
 interface loopback100
   ip address 100.100.100.2/32
@@ -451,14 +432,10 @@ vlan 20
 vlan 30
   name VLAN_30
   vn-segment 10030
-vlan 222
-  vn-segment 100222
 
 vrf context CCCP
-  vni 10222
   rd auto
-  address-family ipv4 unicast
-    route-target both auto
+  route-target both auto
 
 interface Vlan10
   no shutdown
@@ -475,11 +452,6 @@ interface Vlan30
   vrf member CCCP
   ip address 30.30.30.30/24
 
-interface Vlan222
-  no shutdown
-  vrf member CCCP
-  ip forward
-
 interface nve1
   no shutdown
   host-reachability protocol bgp
@@ -490,8 +462,7 @@ interface nve1
     ingress-replication protocol bgp
   member vni 10030
     ingress-replication protocol bgp
-  member vni 100222 associate-vrf
-
+  
 router bgp 65010
   router-id 3.3.3.3
   timers bgp 3 9
