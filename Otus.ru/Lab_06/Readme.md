@@ -42,7 +42,7 @@ Route Distinguisher: 5.5.5.5:3    (L3VNI 100222)
 
 полные файлы конфигураций в каталоге Config
 
-# Основная конфигурация EVPN_L2 BGP
+# Основная конфигурация EVPN_L3 iBGP
 
 # Spine_01
 
@@ -61,34 +61,30 @@ router bgp 65001
   log-neighbor-changes
   address-family l2vpn evpn
     maximum-paths 10
-    retain route-target all
   neighbor 10.3.1.1
-    remote-as 65008
+    remote-as 65001
     update-source loopback0
-    ebgp-multihop 5
+    timers 6 9
     address-family l2vpn evpn
       send-community
       send-community extended
-      route-map NH_UNCHANGED out
-      rewrite-evpn-rt-asn
+      route-reflector-client
   neighbor 10.4.1.1
-    remote-as 65009
+    remote-as 65001
     update-source loopback0
-    ebgp-multihop 5
+    timers 6 9
     address-family l2vpn evpn
       send-community
       send-community extended
-      route-map NH_UNCHANGED out
-      rewrite-evpn-rt-asn
+      route-reflector-client
   neighbor 10.5.1.1
-    remote-as 65010
+    remote-as 65001
     update-source loopback0
-    ebgp-multihop 5
+    timers 6 9
     address-family l2vpn evpn
       send-community
       send-community extended
-      route-map NH_UNCHANGED out
-      rewrite-evpn-rt-asn
+      route-reflector-client
 
 
 
@@ -112,34 +108,30 @@ router bgp 65001
   log-neighbor-changes
   address-family l2vpn evpn
     maximum-paths 10
-    retain route-target all
   neighbor 10.3.1.1
-    remote-as 65008
+    remote-as 65001
     update-source loopback0
-    ebgp-multihop 5
+    timers 6 9
     address-family l2vpn evpn
       send-community
       send-community extended
-      route-map NH_UNCHANGED out
-      rewrite-evpn-rt-asn
+      route-reflector-client
   neighbor 10.4.1.1
-    remote-as 65009
+    remote-as 65001
     update-source loopback0
-    ebgp-multihop 5
+    timers 6 9
     address-family l2vpn evpn
       send-community
       send-community extended
-      route-map NH_UNCHANGED out
-      rewrite-evpn-rt-asn
+      route-reflector-client
   neighbor 10.5.1.1
-    remote-as 65010
+    remote-as 65001
     update-source loopback0
-    ebgp-multihop 5
+    timers 6 9
     address-family l2vpn evpn
       send-community
       send-community extended
-      route-map NH_UNCHANGED out
-      rewrite-evpn-rt-asn
+      route-reflector-client
 
 
 
