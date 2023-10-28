@@ -1,4 +1,4 @@
-# Построение Overlay сети EVPN_L2 поверх Underlay OSPF Ipv4
+# Построение Overlay сети VxLAN EVPN_L2 поверх Underlay OSPF Ipv4
 
 ![Alt text](image.png)
 
