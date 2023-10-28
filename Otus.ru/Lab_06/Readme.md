@@ -476,6 +476,10 @@ interface Vlan222
   ip forward
 2) добавление в int nve1
 member vni 100222 associate-vrf
+3) добавление в int nve1 на member vni
+  suppress-arp
+
+
 ```
 
 # Маршрут Leaf_01

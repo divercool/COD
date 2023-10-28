@@ -80,8 +80,10 @@ interface nve1
   host-reachability protocol bgp
   source-interface loopback100
   member vni 10010
+  suppress-arp
     ingress-replication protocol bgp
   member vni 10030
+  suppress-arp
     ingress-replication protocol bgp
   member vni 100222 associate-vrf
 
