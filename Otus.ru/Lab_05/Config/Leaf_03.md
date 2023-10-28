@@ -49,7 +49,8 @@ route-map Leaf_peer permit 10
   match interface loopback0 
 vrf context CCCP
   rd auto
-  route-target both auto
+  address-family ipv4 unicast
+    route-target both auto
 vrf context management
 
 
