@@ -1,19 +1,19 @@
 # Построение Overlay сети VxLAN EVPN_L3 поверх Underlay OSPF Ipv4
 
-![Alt text](image-1.png)
+![Alt text](image.png)
 
 # Работа маршрутизации L3 asymmetric evpn
-принципиалная разница от L2 Type2 MAC маршрута в добавлении маршрута TYPE2 MAC-IP
+принципиалная разница от L2 Type2 MAC маршрутизации в добавлении маршрута TYPE2 MAC-IP
 ```python
 *>e[2]:[0]:[0]:[48]:[aabb.cc00.6000]:[32]:[10.10.10.100]/248
 *>e[2]:[0]:[0]:[48]:[aabb.cc00.a000]:[32]:[20.20.20.1]/248
 
 ```
 
-Отправка icmp павета в vni 10020
+Отправка icmp пакета в vni 10020
 ![Alt text](ping1.png)
 
-Прием icmp павета в vni 10010
+Прием icmp пакета в vni 10010
 
 ![Alt text](ping2.png)
 # Работа маршрутизации L3 symmetric evpn
@@ -34,10 +34,10 @@ Route Distinguisher: 5.5.5.5:3    (L3VNI 100222)
 
 При Симметричном маршруте все ходит в одном VNI
 
-![Alt text](image-4.png)
+![Alt text](ping3.png)
 
 
-![Alt text](image-5.png)
+![Alt text](ping4.png)
 
 
 полные файлы конфигураций в каталоге Config
