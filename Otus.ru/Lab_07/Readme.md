@@ -13,7 +13,7 @@
 # итог работы VPC
 ![Alt text](R9.png)
 
-# Маршрут с Leaf_01 в сторону R9
+# Маршрут с Leaf_01 в сторону R9 и R10
 используется secondary IP интерфейса Loopbak100 в качестве nexthop
 ```python
 Route Distinguisher: 3.3.3.3:3    (L3VNI 100222)
