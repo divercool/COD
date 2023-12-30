@@ -12,7 +12,7 @@
 # Адресация находится в каталоге Config
 # Полные файлы конфигураций в каталоге Config
 
-# В проекте кратко показана работа нового маашинного зала ЦОД
+# В проекте кратко показана работа нового машинного зала ЦОД
 
 # Краткий вывод команд
 
@@ -27,6 +27,7 @@ Lo1                  10.10.1.1       protocol-up/link-up/admin-up
 Eth1/1               10.100.254.1    protocol-up/link-up/admin-up       
 Eth1/2               10.100.254.5    protocol-up/link-up/admin-up       
 Eth1/3               10.100.254.9    protocol-up/link-up/admin-up
+
 
 Spine_01# sh ip ro
 IP Route Table for VRF "default"
