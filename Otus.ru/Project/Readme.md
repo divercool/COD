@@ -9,6 +9,11 @@
 
 # Добавлен Border_Leaf
 ![Alt text](Net1.png)
+
+# Вброс внешнего маршрута в Оверлей
+
+![Alt text](Update_attribute.png)
+
 # Адресация находится в каталоге Config
 # Полные файлы конфигураций в каталоге Config
 
