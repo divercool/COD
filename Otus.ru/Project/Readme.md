@@ -12,7 +12,7 @@
 
 # Вброс внешнего маршрута в Оверлей
 
-![Alt text](Update_attribute.png)
+![Alt text](image.png)
 
 # Адресация находится в каталоге Config
 # Полные файлы конфигураций в каталоге Config
